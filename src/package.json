@@ -1,0 +1,24 @@
+{
+  "name": "fem-four-card-section",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "./../public/index.html",
+  "scripts": {
+    "scss:build": "sass scss:./../public/css",
+    "scss:watch": "sass --watch scss:./../public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderpren/fem-four-card-section.git"
+  },
+  "author": "Alex Pren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderpren/fem-four-card-section/issues"
+  },
+  "homepage": "https://github.com/alexanderpren/fem-four-card-section#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.48.0"
+  }
+}

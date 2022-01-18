@@ -1,0 +1,31 @@
+.card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.card__first-header {
+    font-weight: 300;
+    font-size: 2rem;
+    font-style: normal;
+    color: $grayish-blue;
+}
+
+.card__second-header {
+    font-weight: bold;
+    font-size: 2rem;
+    color: $secondary;
+}
+
+.card__subtitle {
+    margin-top: 15px;
+    font-size: small;
+    font-weight: 600;
+    color: $grayish-blue;
+}
+
+.card__subtitle-second {
+    margin-left: 35px;
+}

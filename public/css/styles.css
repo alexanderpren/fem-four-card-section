@@ -37,35 +37,37 @@ main {
 }
 
 .card__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
+  margin-top: 3.75rem;
+  text-align: center;
 }
 
 .card__first-header {
-  font-weight: 300;
-  font-size: 2rem;
+  font-weight: 100;
+  font-size: 1.5rem;
   font-style: normal;
-  color: #a3a5ae;
+  color: #4c4e61;
 }
 
 .card__second-header {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #000820;
 }
 
-.card__subtitle {
-  margin-top: 15px;
-  font-size: small;
-  font-weight: 600;
+.card__subtitle-container {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
   color: #a3a5ae;
+  margin-bottom: 4rem;
 }
 
-.card__subtitle-second {
-  margin-left: 35px;
+@media only screen and (min-width: 75em) {
+  .card__subtitle-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

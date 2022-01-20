@@ -1,0 +1,37 @@
+.card__container-grid {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.card__box {
+    border-radius: 0.2rem;
+    border-top: 2rem;
+    background-color: $primary;
+    -webkit-box-shadow: 0px 7px 9px 5px rgba(207, 201, 207, 1);
+    -moz-box-shadow: 0px 7px 9px 5px rgba(207, 201, 207, 1);
+    box-shadow: 0px 7px 9px 5px rgba(207, 201, 207, 1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+
+    &:nth-child(1) {
+        border-top: 0.3rem solid $color-cyan;
+    }
+    &:nth-child(2) {
+        border-top: 0.3rem solid $color-red;
+    }
+    &:nth-child(3) {
+        border-top: 0.3rem solid $color-orange;
+    }
+    &:nth-child(4) {
+        border-top: 0.3rem solid $color-blue;
+    }
+
+}
+
+.card__color-header {
+    border-color: aqua;
+    border-width: 0.1rem;
+}

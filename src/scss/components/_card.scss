@@ -5,6 +5,46 @@
     margin-right: 2rem;
 }
 
+.card__container-left {
+    &__card__box {
+        &:nth-child(1) {
+            border-top: 0.3rem solid $color-red;
+        }
+    }
+}
+
+@include respond-to(desktop) {
+    .card__container-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        align-items: stretch;        
+        align-content: stretch;       
+
+    }
+
+    .card__container-left {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        align-content: center;
+    }
+
+    .card__container-center {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        align-content: center;
+    }
+
+    .card__container-right {
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
+        align-content: center;
+    }
+   
+}
+
 .card__box {
     border-radius: 0.2rem;
     border-top: 2rem;
@@ -16,22 +56,33 @@
     margin-bottom: 1rem;
 
 
-    &:nth-child(1) {
+    &.top-color-cyan {
         border-top: 0.3rem solid $color-cyan;
     }
-    &:nth-child(2) {
+
+    &.top-color-red {
         border-top: 0.3rem solid $color-red;
     }
-    &:nth-child(3) {
+
+    &.top-color-orange {
         border-top: 0.3rem solid $color-orange;
     }
-    &:nth-child(4) {
+
+    &.top-color-blue {
         border-top: 0.3rem solid $color-blue;
     }
 
 }
 
+
 .card__color-header {
     border-color: aqua;
     border-width: 0.1rem;
+}
+
+.card__header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $dark-blue;
+
 }

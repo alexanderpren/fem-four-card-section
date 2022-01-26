@@ -6,35 +6,45 @@
 }
 
 
-
 @include respond-to(desktop) {
+
     .card__container-grid {
-        max-width: 100%;        
         display: grid;
-        grid-template-columns: auto minmax(30rem,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        column-gap: 1rem;
-        row-gap: 1rem;
-        padding-right: 4rem;
-
+        column-gap: 0.90rem;
+        row-gap: 0.45rem;
+        margin: 0;
     }
 
-    .card__container-left {
+    .card__column-left {
         grid-column: 1 / 2;
-        grid-row: 2 / 4;      
+        grid-row: 2 / 4;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
-    .card__container-center {
+    .card__column-center {
+        padding: 0;
+        margin: 0;
         grid-column: 2 / 3;
-        grid-row: 1 / 4;
+        grid-row: 1 / 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         justify-content: space-between;
-      
-  
     }
 
-    .card__container-right {
-        grid-column: 3 / -1;
-        grid-row: 2 / -1;        
+
+
+    .card__column-right {
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
+        width: 100%;
+        justify-self: start;
     }
 
 }
@@ -68,14 +78,47 @@
 }
 
 
-.card__color-header {
-    border-color: aqua;
-    border-width: 0.1rem;
+@include respond-to(desktop) {
+    .card__box {
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 80%;
+    }
 }
+
 
 .card__header {
     font-weight: bold;
     font-size: 1.5rem;
     color: $dark-blue;
+}
+
+.card__subtitle-container {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+}
+
+.card__second-subtitle {
+    font-size: 0.875rem;
+    text-align: unset;
+
+}
+
+@include respond-to(desktop) {
+    .card__subtitle-container {
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .card__second-subtitle {
+        font-size: 1em;
+        align-items: center;
+        width: 35%;
+    }
 
 }

@@ -129,6 +129,7 @@ main {
   box-shadow: 0px 7px 9px 5px #cfc9cf;
   padding: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .card__box.top-color-cyan {
   border-top: 0.3rem solid #45d3d3;
@@ -159,28 +160,54 @@ main {
 .card__subtitle-container {
   width: 100%;
   display: flex;
-  padding: 1rem;
+  padding: 0.2rem;
+  margin-top: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #a3a5ae;
+  margin-bottom: 1.5rem;
 }
 
-.card__second-subtitle {
-  font-size: 0.875rem;
-  text-align: unset;
+.card__first-subtitle {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.card__text-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a3a5ae;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 @media only screen and (min-width: 75em) {
   .card__subtitle-container {
     padding: 0;
     margin-left: 0;
-    width: 100%;
+    width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
 
-  .card__second-subtitle {
+  .card__text-subtitle {
     font-size: 1em;
     align-items: center;
     width: 35%;
   }
+}
+.card__container-image {
+  margin-top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.card__image {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

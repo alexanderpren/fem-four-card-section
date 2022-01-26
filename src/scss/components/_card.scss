@@ -58,6 +58,7 @@
     box-shadow: 0px 7px 9px 5px rgba(207, 201, 207, 1);
     padding: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 
     &.top-color-cyan {
         border-top: 0.3rem solid $color-cyan;
@@ -96,29 +97,57 @@
 .card__subtitle-container {
     width: 100%;
     display: flex;
-    padding: 1rem;
+    padding: 0.2rem;
+    margin-top: 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $grayish-blue;
+    margin-bottom: 1.5rem;
 }
 
-.card__second-subtitle {
-    font-size: 0.875rem;
-    text-align: unset;
-
+.card__first-subtitle {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
 }
+
+.card__text-subtitle {    
+    font-size: 1rem;
+    font-weight: 500;
+    color: $grayish-blue;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
 
 @include respond-to(desktop) {
     .card__subtitle-container {
         padding: 0;
         margin-left: 0;
-        width: 100%;
+        width: 60%;
         display: flex;
-        justify-content: center;
-
+        justify-content: start;
     }
 
-    .card__second-subtitle {
+    .card__text-subtitle  {
         font-size: 1em;
         align-items: center;
         width: 35%;
     }
 
+}
+
+.card__container-image {
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+.card__image {
+    margin-left: 1rem;
 }
